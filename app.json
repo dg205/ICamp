@@ -13,7 +13,14 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "config": {
+        "googleMapsApiKey": "AIzaSyAkPt0_ePfjE0-wAOVQIWrxeL4mSdOiIyM"
+      },
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dustin1022.Icampus",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -23,6 +30,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f6815fab-c739-485a-93c0-91e99cf172b2"
+      }
     }
   }
 }

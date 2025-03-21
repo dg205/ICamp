@@ -11,14 +11,17 @@
   },
   "dependencies": {
     "@expo/metro-runtime": "~4.0.1",
+    "@vis.gl/react-google-maps": "^1.5.2",
     "axios": "^1.8.3",
     "expo": "~52.0.39",
     "expo-status-bar": "~2.0.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-native": "0.76.7",
+    "react-native-dotenv": "^3.4.11",
     "react-native-maps": "^1.20.1",
-    "react-native-web": "~0.19.13"
+    "react-native-web": "~0.19.13",
+    "expo-dev-client": "~5.0.14"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
