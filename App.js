@@ -17,21 +17,37 @@ const App = () => {
   return (
     <View style={styles.container}>
       <MapView
-        //provider={PROVIDER_GOOGLE} // Use Google Maps
+        //provider={PROVIDER_GOOGLE} // Use Google Maps dont delete comment
         style={styles.map}
-        initialRegion={{
-          latitude: 22.54992,
-          longitude: 0,
-          latitudeDelta: 10,
-          longitudeDelta: 10,
-        }}
-      >
-        <Marker
-          coordinate={{ latitude: 22.54992, longitude: 0 }}
-          title="Marker Title"
-          description="Marker Description"
-        />
-      </MapView>
+        initialCamera={
+          {
+            center: {
+              latitude: 33.9384473,
+              longitude: -84.5223347,
+            },
+            pitch: 0,
+            heading: 0,
+            altitude: 50,
+            zoom: 18,
+          }
+          //   {
+          //     center: {
+          //       latitude: 33.9384473,
+          //       longitude: -84.5223347,
+          //     },
+          //     pitch: 0,
+          //     heading: 0,
+          //     altitude: 0,
+          //     zoom: 0,
+          //   }
+        }
+        //initialRegion={{
+        //latitude: 33.9384473,
+        //longitude: -84.5223347,
+        //latitudeDelta: 0.0001,
+        //longitudeDelta: 0.0001,
+        //}}
+      ></MapView>
     </View>
   );
 };
