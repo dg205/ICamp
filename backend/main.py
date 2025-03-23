@@ -1,37 +1,24 @@
 from fastapi import FastAPI
-from geopy.geocoders import Nominatim
+#from geopy.geocoders import Nominatim
+import json
 
 app = FastAPI()
 
-geolocator = Nominatim(user_agent="campus-safety")
+with open("floorplan.json", "r") as f:
+    building_map = json.load(f)
 
-buildings =[
-    {"id": 1, "name": "Library", "latitude": 33.7756, "longitude": -84.3963},
-    {"id": 2, "name": "Student Center", "latitude": 33.7758, "longitude": -84.3980},
-]
-
-alerts=[
-    {"id": 1, "latitude": 33.7759, "longitude": -84.3975, "description": "Poor lighting in the area"}
-]
-
-@app.get("/buildings")
-def get_buildings():
-    return buildings
-
-@app.get("/alerts")
-def get_alerts():
-    return alerts
-
-@app.get("/geocode")
-def get_coordinates(address: str):
-    location = geolocator.geocode(address)
-    if location:
-        return {"latitude": location.latitude, "longitude": location.longitude}
-    return {"error": "location not found"}
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host ="0.0.0.0", port=8000)
+print(json.dumps(building_map, indent=2))
 
 
+@app.get("/route")
+def get_route(start: str, end: str):
+    """Returns a path from start to end based on indoor map data"""
+    possible_keys = [key for key in building_map["routes"].keys() if end in key]
+
+    if possible_keys:
+        route_key = possible_keys[0]  # Assuming first match is the correct one
+        route = building_map["routes"].get(route_key, [])
+        return {"route": route}
+    
+    return {"route": []}  # Return an empty route if no path is found  # Return an empty route if no path is found
 

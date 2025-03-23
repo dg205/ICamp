@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "entrance_to_study_room": [
+      {"latitude": 33.9384473, "longitude": -84.5223347},
+      {"latitude": 33.9385000, "longitude": -84.5223400},
+      {"latitude": 33.9385500, "longitude": -84.5223200}
+    ]
+  }
+}
