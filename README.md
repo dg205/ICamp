@@ -4,7 +4,7 @@ A project developed for the Bank of America Hackathon
 ### 👥 Team Members
 Rami Elmostafa – Full Stack
 
-Dante Galvan – Backend Developer
+Dante Galvan – Full Stack
 
 Dustin Puga – Frontend Developer 
 
