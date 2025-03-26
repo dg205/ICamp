@@ -2,13 +2,13 @@
 A project developed for the Bank of America Hackathon
 
 ### 👥 Team Members
-Rami Elmostafa – Team Lead, Software Engineer
+Rami Elmostafa – Full Stack
 
 Dante Galvan – Backend Developer
 
-Dustin Puga – Frontend Developer – Aspiring Software Engineer
+Dustin Puga – Frontend Developer 
 
-Joy Parks
+Joy Parks - Backend Developer
 
 ## 📝 Project Overview
 Our Campus Navigation System is a web-based application designed to help students find the fastest route to classrooms, discover campus events, and even send emergency alerts to campus security. Built in just 5 days, the project showcases our ability to collaborate effectively, develop innovative algorithms, and integrate real-time mapping solutions.
@@ -30,7 +30,7 @@ Database: Firebase
 APIs & Tools: Google Maps API, GitHub, GitKraken
 
 ## 📂 Presentation
-Check out our project presentation: PowerPoint Link
+Check out our project presentation: https://kennesawedu-my.sharepoint.com/:p:/r/personal/relmost1_students_kennesaw_edu/Documents/MyCampus%20BankOfAmerica%20Hackathon.pptx?d=w8fe1d1a176c04ac692cd11d085497a6e&csf=1&web=1&e=pgvQ8L 
 
 ## 🎯 Key Takeaways
 Developed a fully functional prototype in 5 days during the Bank of America Hackathon.
