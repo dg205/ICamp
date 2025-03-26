@@ -1,4 +1,4 @@
-# 📍 Campus Navigation System
+# 📍 ICamp
 A project developed for the Bank of America Hackathon
 
 ### 👥 Team Members
